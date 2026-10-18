@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barniz Galeras | Inicio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0b0705;
+            --wood-dark: #1a0f07;
+            --gold-light: #f6d77a;
+            --gold-dark: #c9822a;
+            --teal-accent: #1e6f5c;
+            --text-light: #f7e6bd;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: var(--bg-dark); color: var(--text-light); font-family: 'Montserrat', sans-serif; line-height: 1.6; }
+
+        /* HEADER FIX Y LOGO */
+        header { background: rgba(26,15,7,0.98); border-bottom: 2px solid var(--gold-dark); position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(8px); }
+        .header-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; }
+        .brand { display: flex; align-items: center; gap: 15px; text-decoration: none; }
+        .brand img { height: 55px; width: 55px; border-radius: 50%; border: 2px solid var(--gold-light); object-fit: cover; }
+        .brand-title { font-family: 'Cinzel Decorative', serif; font-size: 1.4rem; color: var(--gold-light); font-weight: 900; letter-spacing: 1px; }
+
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { color: var(--text-light); text-decoration: none; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: color 0.3s; }
+        nav a:hover, nav a.active { color: var(--gold-light); border-bottom: 2px solid var(--gold-light); padding-bottom: 4px; }
+
+        /* HERO BANNER PORTADA */
+        .hero-banner { width: 100%; height: 420px; background: linear-gradient(rgba(11,7,5,0.65), rgba(11,7,5,0.9)), url('https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; border-bottom: 1px solid var(--gold-dark); padding: 0 20px; }
+        .hero-banner h1 { font-family: 'Cinzel Decorative', serif; font-size: 3rem; color: var(--gold-light); text-shadow: 0 4px 12px rgba(0,0,0,0.9); }
+        .hero-banner p { font-size: 1.25rem; max-width: 750px; margin-top: 15px; }
+
+        section { max-width: 1200px; margin: 60px auto; padding: 0 20px; }
+        .section-title { font-family: 'Cinzel Decorative', serif; font-size: 2.2rem; color: var(--gold-light); text-align: center; margin-bottom: 40px; }
+
+        .talleres-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 30px; }
+        .taller-card { background: var(--wood-dark); border: 1px solid var(--gold-dark); border-radius: 12px; padding: 25px; text-align: center; transition: transform 0.3s, box-shadow 0.3s; }
+        .taller-card:hover { transform: translateY(-8px); box-shadow: 0 8px 25px rgba(201,130,42,0.3); }
+        .taller-card h3 { color: var(--gold-light); font-family: 'Cinzel Decorative', serif; margin-bottom: 12px; font-size: 1.3rem; }
+
+        footer { background: var(--wood-dark); text-align: center; padding: 30px; border-top: 1px solid var(--gold-dark); margin-top: 80px; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="brand">
+                <img src="logo.jpg" alt="Barniz Galeras Logo">
+                <span class="brand-title">BARNIZ GALERAS</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda & Artesanos</a></li>
+                    <li><a href="patrimonio.html">Patrimonio</a></li>
+                    <li><a href="guia.html">Guía Interactiva</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-banner">
+        <h1>Barniz Galeras</h1>
+        <p>Arte y Sabiduría Ancestral en Mopa-Mopa desde San Juan de Pasto, Nariño</p>
+    </div>
+
+    <section>
+        <h2 class="section-title">Maestros y Talleres Artesanales</h2>
+        <div class="talleres-grid">
+            <div class="taller-card">
+                <h3>Taller Germán Obando</h3>
+                <p>Especialistas en bargueños, cofres e imaginería tradicional con acabados coloniales refinados.</p>
+            </div>
+            <div class="taller-card">
+                <h3>Taller Granja</h3>
+                <p>Maestros de Maestros Gilberto y Óscar Granja. Guardianes del Patrimonio Inmaterial UNESCO.</p>
+            </div>
+            <div class="taller-card">
+                <h3>Estudio Muñoz Lora</h3>
+                <p>Maestro Eduardo Muñoz Lora. Excelencia e innovación en calado y composiciones contemporáneas.</p>
+            </div>
+            <div class="taller-card">
+                <h3>Taller Jesús Ceballos</h3>
+                <p>Tradición viva en la elaboración de bateas, jarrones y piezas utilitarias decoradas a mano.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Barniz Galeras - San Juan de Pasto, Nariño. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>

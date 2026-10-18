@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barniz Galeras | Patrimonio Cultural</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-dark: #0b0705; --wood-dark: #1a0f07; --gold-light: #f6d77a; --gold-dark: #c9822a; --text-light: #f7e6bd; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background-color: var(--bg-dark); color: var(--text-light); font-family: 'Montserrat', sans-serif; line-height: 1.8; }
+
+        header { background: rgba(26,15,7,0.98); border-bottom: 2px solid var(--gold-dark); position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(8px); }
+        .header-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 12px 20px; }
+        .brand { display: flex; align-items: center; gap: 15px; text-decoration: none; }
+        .brand img { height: 55px; width: 55px; border-radius: 50%; border: 2px solid var(--gold-light); object-fit: cover; }
+        .brand-title { font-family: 'Cinzel Decorative', serif; font-size: 1.4rem; color: var(--gold-light); font-weight: 900; }
+
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { color: var(--text-light); text-decoration: none; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; }
+        nav a:hover, nav a.active { color: var(--gold-light); border-bottom: 2px solid var(--gold-light); padding-bottom: 4px; }
+
+        /* PORTADA PATRIMONIO */
+        .hero-banner { width: 100%; height: 300px; background: linear-gradient(rgba(11,7,5,0.7), rgba(11,7,5,0.9)), url('https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid var(--gold-dark); }
+        .hero-banner h1 { font-family: 'Cinzel Decorative', serif; font-size: 2.5rem; color: var(--gold-light); }
+
+        section { max-width: 900px; margin: 50px auto; padding: 40px; background: var(--wood-dark); border: 1px solid var(--gold-dark); border-radius: 12px; }
+        h2 { font-family: 'Cinzel Decorative', serif; color: var(--gold-light); margin-bottom: 15px; margin-top: 25px; }
+
+        footer { background: var(--wood-dark); text-align: center; padding: 30px; border-top: 1px solid var(--gold-dark); margin-top: 80px; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="brand">
+                <img src="logo.jpg" alt="Barniz Galeras Logo">
+                <span class="brand-title">BARNIZ GALERAS</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="tienda.html">Tienda & Artesanos</a></li>
+                    <li><a href="patrimonio.html" class="active">Patrimonio</a></li>
+                    <li><a href="guia.html">Guía Interactiva</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero-banner">
+        <h1>Patrimonio Inmaterial de la Humanidad</h1>
+    </div>
+
+    <section>
+        <h2>Origen Ancestral del Mopa-Mopa</h2>
+        <p>El Barniz de Pasto es una manifestación artesanal de origen prehispánico única en el mundo. La materia prima proviene de los cogollos del árbol silvestre mopa-mopa (<em>Elaeagia pastoensis</em>), recolectado en las selvas andino-amazónicas del Putumayo por recolectores tradicionales.</p>
+
+        <h2>El Arte de la Transformación</h2>
+        <p>Una vez en San Juan de Pasto, los maestros barnizadores hierven la resina en agua caliente para ablandarla, la muelen y la combinan con pigmentos orgánicos y polvos metálicos. Luego, mediante un esfuerzo físico prodigioso utilizando dientes y manos, la resina es estirada hasta convertirla en finísimas membranas o láminas casi transparentes, las cuales son adheridas mediante calor a superficies de madera y cortadas finamente con bisturí.</p>
+
+        <h2>Declaratoria UNESCO (2020)</h2>
+        <p>En el año 2020, la Organización de las Naciones Unidas para la Educación, la Ciencia y la Cultura (UNESCO) inscribió oficialmente los conocimientos y técnicas del Barniz de Pasto Mopa-Mopa en la Lista del <strong>Patrimonio Cultural Inmaterial de la Humanidad</strong>, reconociendo el valor universal de este legado nariñense.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Barniz Galeras - San Juan de Pasto, Nariño. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
